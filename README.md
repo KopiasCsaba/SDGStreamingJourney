@@ -12,8 +12,7 @@ Not just feel free, but **please open PR's or issues** if you have any comments 
 
 # Topics
  * My current workflow: [state of the art](docs/state_of_the_art.md)
- * [OBS](docs/obs.md)
- * [Miscellenaous](docs/misc.md)
+
  * Solutions
     * [ffmpeg](docs/solutions/ffmpeg.md)
 
@@ -22,6 +21,10 @@ Not just feel free, but **please open PR's or issues** if you have any comments 
         * [frame.html](docs/tools/windowmanagement/frame.html.md): Fixed title for url 
         * [dedicated_pulse_out.sh](docs/tools/windowmanagement/dedicated_pulse_out.sh.md): Assign a dedicated pulse output for a program (to be able to capture it separately in OBS) 
         * [dp_firefox.sh](docs/tools/windowmanagement/dp_firefox.sh.md): Start a firefox instance with a fixed title and a dedicated pulse output        
+
+ * [OBS](docs/obs.md)
+ * [Miscellenaous](docs/misc.md)
+ 
 # Preparing before streaming
 This is my checklist before streaming
 

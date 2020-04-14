@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Countdown</title>
+    <script src="../lib/lib.js"></script>
+    <script src="../lib/moment.js"></script>
+    <script>
+        var CFG = {
+            // From where to start counting
+            from: getParameterByName('from') || '000200',
+
+            // Until when to count
+            to: getParameterByName('to') || '000000',
+
+            // If true, it will only show a clock, not a countdown
+            clockOnly: getParameterByName('clockOnly') || false,
+
+            // The output format
+            // https://momentjs.com/docs/#/displaying/
+            format: getParameterByName('format') || "HH:mm:ss",
+
+            // It only counts as seconds if true, otherwise HH:MM:SS
+            secondsOnly: getParameterByName('seconds') || false,
+
+            // Styling
+            color: getParameterByName('color') || "white",
+            strokeColor: getParameterByName('strokeColor') || "black",
+            strokeWidth: getParameterByName('strokeWidth') || 1, // px
+            fontSize: getParameterByName('fontSize') || 200, // px
+            fontFamily: getParameterByName('fontFamily') || "Arial",
+        };
+
+        var h1;
+        var startTime = Date.now();
+        var iv = null;
+
+        window.onload = function () {
+            h1 = document.getElementById('counter');
+
+            h1.style.color = CFG.color;
+            h1.style.borderWidth = CFG.strokeWidth + "px";
+
+            h1.style.webkitTextStrokeColor = CFG.strokeColor;
+            h1.style.webkitTextStrokeWidth = CFG.strokeWidth + "px";
+            h1.style.textStrokeColor = CFG.strokeColor;
+            h1.style.textStrokeWidth = CFG.strokeWidth + "px";
+
+            h1.style.fontSize = CFG.fontSize + "px";
+            h1.style.fontFamily = CFG.fontFamily;
+
+            tick();
+            
+            // @TODO Implement obsstudio events https://github.com/obsproject/obs-browser
+            iv = window.setInterval(tick, 10);
+
+        };
+
+        function tick() {
+
+            if (CFG.clockOnly) {
+                h1.innerHTML = moment().format(CFG.format);
+                return;
+            }
+
+            var elapsedMillis = moment.duration(moment().diff(startTime));
+            var now = moment(CFG.from, "HHmmss").add(-elapsedMillis, "ms");
+            if (now.isSameOrBefore(moment(CFG.to, "HHmmss"))) {
+                window.clearInterval(iv);
+                return;
+            }
+            h1.innerHTML = now.format(CFG.format);
+        }
+
+        console.log(CFG);
+
+    </script>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0);
+            margin: 0px auto;
+            overflow: hidden;
+        }
+
+        h1 {
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+<h1 id="counter">00:00:00</h1>
+</body>
+</html>
