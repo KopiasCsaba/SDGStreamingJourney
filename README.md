@@ -19,12 +19,9 @@ Not just feel free, but **please open PR's or issues** if you have any comments 
 
  * Tools (under [src](src))
     * [Window Management](docs/tools/windowmanagement/index.md)
-        * Fixed title for url 
-                [frame.html](docs/tools/windowmanagement/frame.html.md)
-        * Assign a dedicated pulse output for a program (to be able to capture it separately in OBS) 
-                [dedicated_pulse_out.sh](docs/tools/windowmanagement/dedicated_pulse_out.sh.md)
-        * Start a firefox instance with a fixed title and a dedicated pulse output 
-                [dp_firefox.sh](docs/tools/windowmanagement/dp_firefox.sh.md)        
+        * [frame.html](docs/tools/windowmanagement/frame.html.md): Fixed title for url 
+        * [dedicated_pulse_out.sh](docs/tools/windowmanagement/dedicated_pulse_out.sh.md): Assign a dedicated pulse output for a program (to be able to capture it separately in OBS) 
+        * [dp_firefox.sh](docs/tools/windowmanagement/dp_firefox.sh.md): Start a firefox instance with a fixed title and a dedicated pulse output        
 # Preparing before streaming
 This is my checklist before streaming
 
