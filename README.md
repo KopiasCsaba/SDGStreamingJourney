@@ -28,6 +28,5 @@ This is my checklist before streaming
  * Check media sound levels & eq: Will they be too loud or silent? Fix them beforehand.
 
  
- 
- 
- 
+---- 
+Soli Deo Gloria
