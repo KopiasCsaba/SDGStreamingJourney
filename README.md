@@ -11,9 +11,9 @@ to help others with my solutions and findings.
 Not just feel free, but **please open PR's or issues** if you have any comments or improvements!
 
 # Topics
+ * My current workflow: [state of the art](docs/state_of_the_art.md)
  * [OBS](docs/obs.md)
  * [Miscellenaous](docs/misc.md)
- * My current workflow: [state of the art](docs/state_of_the_art.md)
  * Solutions
     * [ffmpeg](docs/solutions/ffmpeg.md)
 
