@@ -13,15 +13,18 @@ Not just feel free, but **please open PR's or issues** if you have any comments 
 # Topics
  * [OBS](docs/obs.md)
  * [Miscellenaous](docs/misc.md)
- * [State of the art](docs/state_of_the_art.md)
+ * My current workflow: [state of the art](docs/state_of_the_art.md)
  * Solutions
-    * [ffmpeg](docs/misc/ffmpeg.md)
+    * [ffmpeg](docs/solutions/ffmpeg.md)
 
- * Tools
+ * Tools (under [src](src))
     * [Window Management](docs/tools/windowmanagement/index.md)
-        * Fixed title for url (frame.html)[docs/tools/windowmanagement/frame.html.md]
-        * Assign a dedicated pulse output for a program (to be able to capture it separately in OBS) (dedicated_pulse_out.sh)[docs/tools/windowmanagement/dedicated_pulse_out.sh.md]
-        * Start a firefox instance with a fixed title and a dedicated pulse output (dp_firefox.sh)[docs/tools/windowmanagement/dp_firefox.sh.md]        
+        * Fixed title for url 
+                [frame.html](docs/tools/windowmanagement/frame.html.md)
+        * Assign a dedicated pulse output for a program (to be able to capture it separately in OBS) 
+                [dedicated_pulse_out.sh](docs/tools/windowmanagement/dedicated_pulse_out.sh.md)
+        * Start a firefox instance with a fixed title and a dedicated pulse output 
+                [dp_firefox.sh](docs/tools/windowmanagement/dp_firefox.sh.md)        
 # Preparing before streaming
 This is my checklist before streaming
 
