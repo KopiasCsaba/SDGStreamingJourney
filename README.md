@@ -6,3 +6,19 @@ making an online live church service streaming from linux.
 My desire is to document what i've found and share it with the world,
 to help others with my solutions and findings.
 
+This documentation is work in progress, I'm not even sure of its final structure yet.
+
+# Topics
+ * [OBS](docs/obs.md)
+ * [Miscellenaous](docs/misc.md)
+ * [State of the art](docs/state_of_the_art.md)
+
+# Preparing before streaming
+This is my checklist before streaming
+
+ * Check media sound levels & eq: Will they be too loud or silent? Fix them beforehand.
+
+ 
+ 
+ 
+ 
