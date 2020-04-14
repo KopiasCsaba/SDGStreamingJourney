@@ -21,7 +21,9 @@ Not just feel free, but **please open PR's or issues** if you have any comments 
         * [frame.html](docs/tools/windowmanagement/frame.html.md): Fixed title for url 
         * [dedicated_pulse_out.sh](docs/tools/windowmanagement/dedicated_pulse_out.sh.md): Assign a dedicated pulse output for a program (to be able to capture it separately in OBS) 
         * [dp_firefox.sh](docs/tools/windowmanagement/dp_firefox.sh.md): Start a firefox instance with a fixed title and a dedicated pulse output        
-
+    * [Sources](docs/tools/sources/index.md)
+           * [countdown.html](docs/tools/sources/countdown.html.md): Add a timer or a countdown to obs. 
+   
  * [OBS](docs/obs.md)
  * [Miscellenaous](docs/misc.md)
  

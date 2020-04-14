@@ -20,9 +20,6 @@
             // https://momentjs.com/docs/#/displaying/
             format: getParameterByName('format') || "HH:mm:ss",
 
-            // It only counts as seconds if true, otherwise HH:MM:SS
-            secondsOnly: getParameterByName('seconds') || false,
-
             // Styling
             color: getParameterByName('color') || "white",
             strokeColor: getParameterByName('strokeColor') || "black",
@@ -50,7 +47,7 @@
             h1.style.fontFamily = CFG.fontFamily;
 
             tick();
-            
+
             // @TODO Implement obsstudio events https://github.com/obsproject/obs-browser
             iv = window.setInterval(tick, 10);
 
