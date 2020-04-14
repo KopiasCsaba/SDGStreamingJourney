@@ -1,4 +1,5 @@
 # dedicated_pulse_out.sh
+Dedicated pulse output for an application
 
 ## What
 This script does a few things:

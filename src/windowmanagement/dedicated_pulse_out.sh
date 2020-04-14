@@ -2,7 +2,7 @@
 
 if [ "$2" == "" ]; then
   echo "USAGE:"
-  echo -e "\tdedicated_pulse.sh <sink_name> <command>"
+  echo -e "\tdedicated_pulse.sh <sink_and_title> <command>"
   echo ""
   echo "Example:"
   echo -e "\tdedicated_pulse.sh songs 'vlc playlist.xspf'"
