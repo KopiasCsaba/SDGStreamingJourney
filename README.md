@@ -32,6 +32,10 @@ This is my checklist before streaming
 
  * Check media sound levels & eq: Will they be too loud or silent? Fix them beforehand.
 
- 
+# Tips and tricks
+ * If you need to play multiple things from vlc, set up a playlist.
+    * If you need to put a break into it, add a [3h long silent file](resources/------silence----.ogg) :)
+
+
 ---- 
 Soli Deo Gloria
