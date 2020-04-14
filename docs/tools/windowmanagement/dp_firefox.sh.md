@@ -37,3 +37,6 @@ Example:
 
 It will do the urlencoding for you, you don't need to bother with that here.
 
+It will start a firefox instance, that has an important security feature disabled,
+so be careful!
+
