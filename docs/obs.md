@@ -21,7 +21,7 @@ Several applications can use it:
 ## Browser source
  * You can inject a webpage into OBS, this has a huge potential.
  * You can interact with it by the option in the right click context menu -> "Interact"
-
+ * Currently it is not gpu accelerated (it may lag), and it uses quite a lot of cpu, be aware.
 
 ## Scene in a scene
 You can add a scene into a scene. You might ask why? I was like that for a while too.

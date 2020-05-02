@@ -10,31 +10,30 @@ to help others with my solutions and findings.
 
 Not just feel free, but **please open PR's or issues** if you have any comments or improvements!
 
-# Topics
- * My current workflow: [state of the art](docs/state_of_the_art.md)
-
- * Solutions
-    * [ffmpeg](docs/solutions/ffmpeg.md)
+# How tos
+ * [How to compile ffmpeg with nvenc & vaapi support](docs/howtos/ffmpeg.md)
+ * StreamFixer browser extension: [How to live stream an online conference](https://github.com/KopiasCsaba/StreamFixerBrowserExtension)
+ * [How to compile OBS studio on linux](docs/howtos/compile_obs.md)
+ 
+# Knowledge base
+ * [Intresting things I learnt about OBS](docs/obs.md)
+ * [Tips and tricks](docs/tips_and_tricks.md)
+ * [My current workflow](docs/state_of_the_art.md)
+ * [Miscellenaous](docs/misc.md)
+ 
+# My custom tools
 
  * Tools (under [src](src))
     * [Window Management](docs/tools/windowmanagement/index.md)
         * [frame.html](docs/tools/windowmanagement/frame.html.md): Fixed title for url 
         * [dedicated_pulse_out.sh](docs/tools/windowmanagement/dedicated_pulse_out.sh.md): Assign a dedicated pulse output for a program (to be able to capture it separately in OBS) 
         * [dp_firefox.sh](docs/tools/windowmanagement/dp_firefox.sh.md): Start a firefox instance with a fixed title and a dedicated pulse output        
+        * [create_sink.sh](docs/tools/windowmanagement/create_sink.sh.md): Creates a new pulseaudio output sink, that you can use manually with pavucontrol & grab in OBS.        
     * [Sources](docs/tools/sources/index.md)
         * [countdown.html](docs/tools/sources/countdown.html.md): Add a timer or a countdown to obs. 
-   
- * [OBS](docs/obs.md)
- * [Miscellenaous](docs/misc.md)
+    * [Resources](resources)
+
  
-# Preparing before streaming
-This is my checklist before streaming
-
- * Check media sound levels & eq: Will they be too loud or silent? Fix them beforehand.
-
-# Tips and tricks
- * If you need to play multiple things from vlc, set up a playlist.
-    * If you need to put a break into it, add a [3h long silent file](resources/------silence----.ogg) :)
 
 
 ---- 
