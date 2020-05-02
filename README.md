@@ -11,15 +11,15 @@ to help others with my solutions and findings.
 Not just feel free, but **please open PR's or issues** if you have any comments or improvements!
 
 # How tos
+ * [How to live stream an online conference](https://github.com/KopiasCsaba/StreamFixerBrowserExtension)
  * [How to compile ffmpeg with nvenc & vaapi support](docs/howtos/ffmpeg.md)
- * StreamFixer browser extension: [How to live stream an online conference](https://github.com/KopiasCsaba/StreamFixerBrowserExtension)
  * [How to compile OBS studio on linux](docs/howtos/compile_obs.md)
  
 # Knowledge base
  * [Intresting things I learnt about OBS](docs/obs.md)
  * [Tips and tricks](docs/tips_and_tricks.md)
  * [My current workflow](docs/state_of_the_art.md)
- * [Miscellenaous](docs/misc.md)
+ * [Miscellaneous](docs/misc.md)
  
 # My custom tools
 
