@@ -37,6 +37,16 @@ Even more, you can modify it and it will update everywhere also!
 
 Be careful, if you have it LIVE already, and you modify it, it will update in real time in the LIVE stream too.
 
+## Projector window
+Right click on the preview or the program display, and select windows projector.
+This will open a window containing what you are streaming.
+
+And you can share this window in a video chat, so that other participants can see real time what is live right now,
+e.g. they might waiting on for a music to finish, and this way they will see real time when you switch to their scenes,
+and they can start talking immediately.
+
+This way you don't need to count back for them, or notify them on chat, nothing.
+
 ## Pitfalls
 
  * Facebook and youtube might hit you with copyright claims not just for the songs you use (or record with a band)

@@ -15,6 +15,7 @@ Not just feel free, but **please open PR's or issues** if you have any comments 
  * [How to compile ffmpeg with nvenc & vaapi support](docs/howtos/ffmpeg.md)
  * [How to compile OBS studio on linux](docs/howtos/compile_obs.md)
  * [How to set up an RTMP relay on your machine, to accept high quality incoming streams](docs/howtos/direct_rtmp_with_nginx.md)
+ * [How to configure VLC for broadcasting](docs/howtos/vlc_setup.md)
  
 # Knowledge base
  * [Intresting things I learnt about OBS](docs/obs.md)
@@ -32,7 +33,8 @@ Not just feel free, but **please open PR's or issues** if you have any comments 
         * [create_sink.sh](docs/tools/windowmanagement/create_sink.sh.md): Creates a new pulseaudio output sink, that you can use manually with pavucontrol & grab in OBS.        
     * [Sources](docs/tools/sources/index.md)
         * [countdown.html](docs/tools/sources/countdown.html.md): Add a timer or a countdown to obs. 
-    * [Resources](resources)
+    * resources
+        * [blank_media](resources/blank_media): To be used as "breaks" or "mini pauses" in a playlist
 
  
 

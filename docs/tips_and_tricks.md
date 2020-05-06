@@ -2,8 +2,8 @@
  * If you need to play multiple things from vlc, set up a playlist.
     * If you need to put breaks into it, add an empty audio or video file. Be careful, if you were playing videos and used window capturing, you might want to add the video file,
     as the audio file will change vlc's layout upon playing.
-        * add a [3h long silent audio file](resources/------blank----.ogg) 
-        * add a [2h long silent black video file](resources/------blank----.mkv) :)
+        * add a [3h long silent audio file](resources/blank_media/------blank------.ogg) 
+        * add a [4h long silent black video file](resources/blank_media/------blank------.mov) :)
 
 # Preparing before streaming
 This is my checklist before streaming
