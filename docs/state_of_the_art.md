@@ -20,4 +20,4 @@ I'm using the above mentioned StreamFixer browser extension that helps grabbing 
 For music i'm using a window-grabbed, custom pulseaudio sinked' VLC instance with it's [remote control](https://www.howtogeek.com/117261/how-to-activate-vlcs-web-interface-control-vlc-from-a-browser-use-any-smartphone-as-a-remote/),
 this way i can leave it full screen behind my OBS while grabbing it, but still i can start/stop it.
 
-Also for breaks i'm using my [blank video file](../resources).
+Also for breaks i'm using my [blank video file](../resources/blank_media).

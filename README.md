@@ -26,12 +26,12 @@ Not just feel free, but **please open PR's or issues** if you have any comments 
 # My custom tools
 
  * Tools (under [src](src))
-    * [Window Management](docs/tools/windowmanagement/index.md)
-        * [frame.html](docs/tools/windowmanagement/frame.html.md): Fixed title for url 
+    * Window management
+        * [create_sink.sh](docs/tools/windowmanagement/create_sink.sh.md): Creates a new pulseaudio output sink, that you can use manually with pavucontrol & grab in OBS.        
         * [dedicated_pulse_out.sh](docs/tools/windowmanagement/dedicated_pulse_out.sh.md): Assign a dedicated pulse output for a program (to be able to capture it separately in OBS) 
         * [dp_firefox.sh](docs/tools/windowmanagement/dp_firefox.sh.md): Start a firefox instance with a fixed title and a dedicated pulse output        
-        * [create_sink.sh](docs/tools/windowmanagement/create_sink.sh.md): Creates a new pulseaudio output sink, that you can use manually with pavucontrol & grab in OBS.        
-    * [Sources](docs/tools/sources/index.md)
+        * [frame.html](docs/tools/windowmanagement/frame.html.md): Fixed title for url 
+    * Sources
         * [countdown.html](docs/tools/sources/countdown.html.md): Add a timer or a countdown to obs. 
     * resources
         * [blank_media](resources/blank_media): To be used as "breaks" or "mini pauses" in a playlist
