@@ -14,6 +14,7 @@ Not just feel free, but **please open PR's or issues** if you have any comments 
  * [How to live stream an online conference](https://github.com/KopiasCsaba/StreamFixerBrowserExtension)
  * [How to compile ffmpeg with nvenc & vaapi support](docs/howtos/ffmpeg.md)
  * [How to compile OBS studio on linux](docs/howtos/compile_obs.md)
+ * [How to set up an RTMP relay on your machine, to accept high quality incoming streams](docs/howtos/direct_rtmp_with_nginx.md)
  
 # Knowledge base
  * [Intresting things I learnt about OBS](docs/obs.md)
