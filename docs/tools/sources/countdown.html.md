@@ -14,6 +14,11 @@ so check the refres and reload checkboxes in OBS.
     * Format: HHmmss
     * default: 000200
 
+ * by: Exact time when the countdown should finish. 143000 for example to count down by 14:30:00.
+ 'from' param is ignored if 'by' is provided
+    * Format: HHmmss
+    * default: [none]
+
  * to: Where to end the countdown. 
     * Format: HHmmss 
     * default: 000000
