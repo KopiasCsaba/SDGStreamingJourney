@@ -10,10 +10,14 @@
             // From where to start counting
             from: getParameterByName('from') || '000200',
 
-            // Until when to count
+            // Until when to count (final dispaly)
             to: getParameterByName('to') || '000000',
 
-            // If true, it will only show a clock, not a countdown
+            // Until when to count (exact time. eg. 140000 => 14:00:00 (2pm))
+            // 'from' param is ignored if 'by' is provided
+            by: getParameterByName('by') || '',
+
+            // If true, it will only show the current time, not a countdown
             clockOnly: getParameterByName('clockOnly') || false,
 
             // The output format
@@ -46,10 +50,10 @@
             h1.style.fontSize = CFG.fontSize + "px";
             h1.style.fontFamily = CFG.fontFamily;
 
-            tick();
-
             // @TODO Implement obsstudio events https://github.com/obsproject/obs-browser
             iv = window.setInterval(tick, 10);
+
+            tick();
 
         };
 
@@ -60,13 +64,33 @@
                 return;
             }
 
-            var elapsedMillis = moment.duration(moment().diff(startTime));
-            var now = moment(CFG.from, "HHmmss").add(-elapsedMillis, "ms");
-            if (now.isSameOrBefore(moment(CFG.to, "HHmmss"))) {
-                window.clearInterval(iv);
-                return;
+            var to = moment(CFG.to, "HHmmss");
+            var current;
+
+            if (CFG.by) {
+                var now = moment();
+                var by = moment(CFG.by, "HHmmss");
+                var diff = by.diff(moment());
+                if (diff < 0) {
+                    finish();
+                    return;
+                }
+                current = to.add(diff, 'ms')
+            } else {
+                var elapsedMillis = moment().diff(startTime);
+                current = moment(CFG.from, "HHmmss").subtract(elapsedMillis, "ms");
+                if (current.isSameOrBefore(to)) {
+                    finish();
+                    return;
+                }
             }
-            h1.innerHTML = now.format(CFG.format);
+
+            h1.innerHTML = current.format(CFG.format);
+        }
+
+        function finish() {
+            window.clearInterval(iv);
+            h1.innerHTML = moment('000000', 'HHmmss').format(CFG.format);
         }
 
         console.log(CFG);
