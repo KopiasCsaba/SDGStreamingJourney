@@ -11,7 +11,7 @@ to help others with my solutions and findings.
 Not just feel free, but **please open PR's or issues** if you have any comments or improvements!
 
 # How tos
- * [How to live stream an online conference](https://github.com/KopiasCsaba/StreamFixerBrowserExtension)
+ * [How to live stream an online conference](https://www.youtube.com/watch?v=IbEqSYezKOM)
  * [How to compile ffmpeg with nvenc & vaapi support](docs/howtos/ffmpeg.md)
  * [How to compile OBS studio on linux](docs/howtos/compile_obs.md)
  * [How to set up an RTMP relay on your machine, to accept high quality incoming streams](docs/howtos/direct_rtmp_with_nginx.md)
@@ -35,8 +35,7 @@ Not just feel free, but **please open PR's or issues** if you have any comments 
         * [countdown.html](docs/tools/sources/countdown.html.md): Add a timer or a countdown to obs. 
     * resources
         * [blank_media](resources/blank_media): To be used as "breaks" or "mini pauses" in a playlist
-
- 
+ * [StreamFixer browser extension](https://github.com/KopiasCsaba/StreamFixerBrowserExtension)
 
 
 ---- 

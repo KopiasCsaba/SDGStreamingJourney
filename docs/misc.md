@@ -15,3 +15,6 @@ ffmpeg -re  -progress - -nostats -i music.mp4  -f v4l2 /dev/video0
 
 Status: I need a way to stream to it while seeing remaining time,
 possibly to use a playlist, etc. Ffmpeg does not allow me to do that.
+
+
+sudo modprobe v4l2loopback video_nr=10 card_label="Loopback OBS" exclusive_caps=1
