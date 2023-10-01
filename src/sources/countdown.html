@@ -17,12 +17,19 @@
             // 'from' param is ignored if 'by' is provided
             by: getParameterByName('by') || '',
 
+            // Use the word clock as a variable.
+            // e.g. "Starting in clock"
+            textFormat: getParameterByName('textFormat') || 'clock',
+
+            // Text alignment: left, right, center, justify
+            align: getParameterByName('align') || 'left',
+
             // If true, it will only show the current time, not a countdown
             clockOnly: getParameterByName('clockOnly') || false,
 
             // The output format
             // https://momentjs.com/docs/#/displaying/
-            format: getParameterByName('format') || "HH:mm:ss",
+            dateTimeFormat: getParameterByName('dateTimeFormat') || "HH:mm:ss",
 
             // Styling
             color: getParameterByName('color') || "white",
@@ -46,7 +53,7 @@
             h1.style.webkitTextStrokeWidth = CFG.strokeWidth + "px";
             h1.style.textStrokeColor = CFG.strokeColor;
             h1.style.textStrokeWidth = CFG.strokeWidth + "px";
-
+            h1.style.textAlign = CFG.align;
             h1.style.fontSize = CFG.fontSize + "px";
             h1.style.fontFamily = CFG.fontFamily;
 
@@ -60,7 +67,7 @@
         function tick() {
 
             if (CFG.clockOnly) {
-                h1.innerHTML = moment().format(CFG.format);
+                h1.innerHTML = CFG.textFormat.replaceAll("clock",moment().format(CFG.dateTimeFormat));
                 return;
             }
 
@@ -85,12 +92,13 @@
                 }
             }
 
-            h1.innerHTML = current.format(CFG.format);
+            h1.innerHTML = CFG.textFormat.replaceAll("clock",current.format(CFG.dateTimeFormat));
         }
 
         function finish() {
             window.clearInterval(iv);
-            h1.innerHTML = moment('000000', 'HHmmss').format(CFG.format);
+            h1.innerHTML = CFG.textFormat.replaceAll("clock",moment('000000', 'HHmmss').format(CFG.dateTimeFormat));
+
         }
 
         console.log(CFG);

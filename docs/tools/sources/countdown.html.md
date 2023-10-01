@@ -23,9 +23,18 @@ so check the refres and reload checkboxes in OBS.
     * Format: HHmmss 
     * default: 000000
 
- * format: The format of the timer.
+ * dateTimeFormat: The format of the timer.
     * Learn more: [https://momentjs.com/docs/#/displaying/](https://momentjs.com/docs/#/displaying/)
     * default: HH:mm:ss
+   
+ * textFormat: Surrounding text for the clock
+    * Use the word **clock** as a variable.
+    * E.g.: "Starting in clock"
+    * default: clock
+   
+ * align: The alignment of the text.
+    * Values: left, right, center, justify
+    * default: left
 
  * color:
     * default: "white"
